@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Eivind} % Your first name
+\familyname{Elseth} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Grenseveien 9E}{OSLO, 0571}
+\mobile{936 97 196}
+\email{eelseth@icloud.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/thumb_IMG_4302_1024} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2011--2013}{Master of Information Science}{The University of Bergen}{Bergen}{\textit{GPA -- A}}{}  % Arguments not required can be left empty
+\cventry{2008--2011}{Bachelor of Cognitive Science}{The University of Bergen}{Bergen}{\textit{GPA -- A}}{}
+\cventry{2007--2008}{One-year study in psychology}{The University of Bergen}{Bergen}{\textit{GPA -- B}}{}
+
+%\cventry{2011--2013}{Master of Information Science}{The University of Bergen}{}{\textit{GPA -- A}}  % Arguments not required can be left empty
+%\cventry{2008--2011}{Bachelor of Cognitive Science}{The University of Bergen}{}{\textit{GPA -- A}}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{Metadata made easy -- Adding metadata by means of natural language}}
+\cvitem{Supervisors}{Professor Csaba Veres}
+\cvitem{Description}{This thesis explored the possibility of creating a tool that added formal semantic meta data to documents while communication to the user in an informal way.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2013--Present}{Search consultant}{\textsc{Comperio}}{Oslo}{}{ Worked on developing advanced search solutions for customers, and worked as head developer on the internal search business logic framework.
+\newline{}
+Projects and responsibilities:
+\begin{itemize}
+	\item Gjensidige: Enonic developer
+		\begin{itemize}
+			\item Updated the java plugin with XRANK FAST ESP queries
+			\item Implemented design in front end using XSL, HTML and javascript
+		\end{itemize}
+	\item Norwegian Research Council: Java and ESP developer
+		\begin{itemize}
+			\item Adapted the Java/Spring based middleware
+			\item Customized the ESP installation
+			\item Rewrote the SQL
+		\end{itemize}
+	\item Ministry of Foreign Affairs/Norad: Lead Java and ESP developer
+		\begin{itemize}
+			\item Adapted the Java/Spring based middleware
+			\item Rewrote ESP rank model and customized ESP dictionaries
+		\end{itemize}
+	\item Comperio Internal: Lead developer for internal search framework
+		\begin{itemize}
+			\item Performed the update from Spring 2.4.5 to 4.1.0
+			\item Rewrote admin GUI using Angular.js
+			\item Wrote the adapter to perform queries against elasticsearch
+		\end{itemize}
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2012}{Summer Intern}{\textsc{Comperio}}{Oslo}{}{Worked on developing a search driven Web site using Node.js. Worked on a JavaScript based interface for querying SharePoint.}
+
+%------------------------------------------------
+
+\cventry{2010--2013}{Teaching assistant}{\textsc{University of Bergen}}{Bergen}{}{As a teaching assistant I held lectures and seminars in the following subjects:
+\begin{itemize}
+	\item Introduction to the Cognitive Sciences (KOG101)
+	\item Introduction to database management (INFO122)
+	\item Selected topics in database management (INFO123)
+	\item Programming for Artificial Intelligence (INFO232) 
+	\item Information and Knowledge (INFO103)
+\end{itemize}
+In addition to holding seminars my responsibilities included giving feedback on term papers and assisting in grading exams. 
+}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2008--2009}{Bergen parish council}{}{Bergen}{}{Represented the council in the Bergen Cathedral Committee, and in Kirkens SOS. Was responsible for communication with the youth work.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Development skills}
+
+\cvitem{Advanced}{Java, Maven, JavaScript, git, regular expressions, FAST ESP}
+\cvitem{Intermediate}{ Node.js, XML, XSLT, HTML5, CSS, SQL, elasticsearch, Spring, \LaTeX, bash}
+\cvitem{Basic}{Python, lisp, Subversion}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Norwegian}{Mothertongue}{}
+\cvitemwithcomment{English}{Fluent}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Running}{Chess}
+\cvlistdoubleitem{Guitar}{Brewing}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
