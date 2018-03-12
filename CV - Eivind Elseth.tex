@@ -13,8 +13,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,7 +48,7 @@
 \email{eelseth@icloud.com}
 %\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
-\photo[70pt][0.4pt]{pictures/thumb_IMG_4302_1024} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\photo[70pt][0.4pt]{pictures/dscf5180} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
@@ -81,67 +81,111 @@
 
 \subsection{Vocational}
 
-\cventry{2016--}{Developer}{\textsc{Skalar}}{Oslo}{}{ 
+\cventry{2016--}{Developer}{\textsc{Skalar}}{Oslo}{}{
     Worked on creating complex web apps
-\newline{}
-Projects and responsibilities:
-\begin{itemize}
-	\item Westerdals - Worked on the creation of a system to handle the application process for new potential students
-		\begin{itemize}
-			\item Worked on the React.js front-end
-		\end{itemize}
-\end{itemize}}
+  \newline{}
+  Projects and responsibilities:
+  \begin{itemize}
+  	\item Westerdals - Full stack developer
+      \newline
+      \textit{Web app for handling applications to the school}
+  		\begin{itemize}
+        \item Implemented front-end with React
+        \item Worked on backend using Node/PostgreSQL/GraphQL
+  		\end{itemize}
+  	\item Drammen Kommune - Full stack developer
+      \textit{Web app allowing the public to book available rooms the county owned}
+  		\begin{itemize}
+  			\item Worked on the React front-end
+        \item Worked on backend using Node/PostgreSQL/GraphQL
+  		\end{itemize}
+    \item NTG - Full stack developer
+      \textit{Web app for handling applications to the school}
+      \begin{itemize}
+        \item Implemented front-end with React
+        \item Worked on backend using Node/PostgreSQL/GraphQL
+      \end{itemize}
+    \item Inviso - Full stack developer
+      \textit{Team responsible for product portifolio focusing on services for real estate brokers}
+      \begin{itemize}
+        \item Added features to modern React front-end
+        \item Worked on Rails legacy application
+        \item Worked on dockerization of services
+      \end{itemize}
+  	\item Gramo - Front-end development
+      \textit{System for managing information about artists discography, collecting radio play times, and calculating and manag@ payouts to Norwegian artists}
+  		\begin{itemize}
+  			\item Worked on the Ember front end
+  			\item Improved elasticsearch setup
+  		\end{itemize}
+  \end{itemize}
+}
 
-\cventry{2013--2016}{Search consultant}{\textsc{Comperio}}{Oslo}{}{ Worked on developing advanced search solutions for customers, and worked as head developer on the internal search business logic framework.
-\newline{}
-Projects and responsibilities:
-\begin{itemize}
-	\item Gjensidige: Enonic developer
-		\begin{itemize}
-			\item Updated the Java plugin with XRANK FAST ESP queries
-			\item Implemented design in front end using XSL, HTML and javascript
-		\end{itemize}
-	\item Norwegian Research Council: Java and ESP developer
-		\begin{itemize}
-			\item Adapted the Java/Spring based middleware
-			\item Customized the ESP installation
-			\item Rewrote the SQL
-		\end{itemize}
-	\item Ministry of Foreign Affairs/Norad: Lead Java and ESP developer
-		\begin{itemize}
-			\item Adapted the Java/Spring based middleware
-			\item Rewrote ESP rank model and customized ESP dictionaries
-		\end{itemize}
-	\item Comperio Internal: Lead developer for internal search framework
-		\begin{itemize}
-			\item Performed the update from Spring 2.4.5 to 4.1.0
-			\item Rewrote admin GUI using Angular.js
-			\item Wrote the adapter to perform queries against elasticsearch
-		\end{itemize}
-\end{itemize}}
+\cventry{2013--2016}{Search consultant}{\textsc{Comperio}}{Oslo}{}{
+  Worked on developing advanced search solutions for customers, and worked as head developer on the internal search business logic framework.
+  \newline{}
+  Projects and responsibilities:
+  \begin{itemize}
+    \item Comperio Internal: Lead developer for internal search framework
+      \newline
+      \textit{Search middleware for integrating with search engines, and creating query/result processing piplines}
+      \begin{itemize}
+        \item Performed the update from Spring 2.4.5 to 4.1.0
+        \item Rewrote admin GUI using Angular.js
+        \item Wrote the adapter to perform queries against elasticsearch
+      \end{itemize}
+  	\item Gjensidige: Enonic developer
+      \newline
+      \textit{Internal search for rapidly finding documents}
+  		\begin{itemize}
+  			\item Updated the Java plugin with XRANK FAST ESP queries
+  			\item Implemented design in front-end using XSL, HTML and javascript
+  		\end{itemize}
+  	\item Norwegian Research Council: Java and ESP developer
+      \newline
+      \textit{Tool allowing pulic to view how research grants were being spent}
+  		\begin{itemize}
+  			\item Adapted the Java/Spring based middleware
+  			\item Customized the ESP installation
+  			\item Rewrote the SQL
+  		\end{itemize}
+  	\item Ministry of Foreign Affairs/Norad: Lead Java and ESP developer
+      \newline
+      \textit{Internal tool for knowledge sharing and document search}
+  		\begin{itemize}
+  			\item Adapted the Java/Spring based middleware
+  			\item Rewrote ESP rank model and customized ESP dictionaries
+  		\end{itemize}
+  \end{itemize}
+  }
 
 %------------------------------------------------
 
-\cventry{2012}{Summer Intern}{\textsc{Comperio}}{Oslo}{}{Worked on developing a search driven Web site using Node.js. Worked on a JavaScript based interface for querying SharePoint.}
+\cventry{2012}{Summer Intern}{\textsc{Comperio}}{Oslo}{}{
+  Worked on developing a search driven Web site using Node.js. Worked on a JavaScript based interface for querying SharePoint.
+}
 
 %------------------------------------------------
 
-\cventry{2010--2013}{Teaching assistant}{\textsc{University of Bergen}}{Bergen}{}{As a teaching assistant I held lectures and seminars in the following subjects:
-\begin{itemize}
-	\item Introduction to the Cognitive Sciences (KOG101)
-	\item Introduction to database management (INFO122)
-	\item Selected topics in database management (INFO123)
-	\item Programming for Artificial Intelligence (INFO232) 
-	\item Information and Knowledge (INFO103)
-\end{itemize}
-In addition to holding seminars my responsibilities included giving feedback on term papers and assisting in grading exams. 
+\cventry{2010--2013}{Teaching assistant}{\textsc{University of Bergen}}{Bergen}{}{
+  As a teaching assistant I held lectures and seminars in the following subjects:
+  \begin{itemize}
+  	\item Introduction to the Cognitive Sciences (KOG101)
+  	\item Introduction to database management (INFO122)
+  	\item Selected topics in database management (INFO123)
+  	\item Programming for Artificial Intelligence (INFO232)
+  	\item Information and Knowledge (INFO103)
+  \end{itemize}
+  In addition to holding seminars my responsibilities included giving feedback on term papers and assisting in grading exams.
 }
 
 %------------------------------------------------
 
 \subsection{Miscellaneous}
 
-\cventry{2008--2009}{Bergen parish council}{}{Bergen}{}{Represented the council in the Bergen Cathedral Committee, and in Kirkens SOS. Was responsible for communication with the youth work.}
+\cventry{2008--2009}{Bergen parish council}{}{Bergen}{}{
+  Represented the council in the Bergen Cathedral Committee, and in Kirkens SOS. Was responsible for communication with the youth work.
+}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
@@ -158,8 +202,8 @@ In addition to holding seminars my responsibilities included giving feedback on 
 
 \section{Development skills}
 
-\cvitem{Advanced}{Java, Maven, JavaScript, git, regular expressions, FAST ESP}
-\cvitem{Intermediate}{ Node.js, XML, XSLT, HTML5, CSS, SQL, elasticsearch, Spring, \LaTeX, bash}
+\cvitem{Advanced}{Java, JavaScript, HTML, CSS, git, regular expressions, Node.js, FAST ESP}
+\cvitem{Intermediate}{Docker, PostgreSQL, SQL, GraphQL, elasticsearch, Spring, \LaTeX, bash, XML, XSLT}
 \cvitem{Basic}{Python, lisp, Subversion}
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
